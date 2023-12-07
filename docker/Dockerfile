@@ -6,7 +6,7 @@ COPY ./ /live
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN ls /lve \
+RUN ls /live \
     && bash /live/icpc-live-v2/docker/install.sh
 
 EXPOSE 8080
