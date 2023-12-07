@@ -2,11 +2,12 @@ FROM ubuntu:22.04
 
 USER root
 WORKDIR /live
-COPY ./ ./live
+COPY ./ /live
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN bash /live/icpc-live-v2/docker/install.sh
+RUN ls /lve \
+    && bash /live/icpc-live-v2/docker/install.sh
 
 EXPOSE 8080
 
